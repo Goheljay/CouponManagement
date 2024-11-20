@@ -9,10 +9,10 @@
 - Limit Per Customer: Restrict the number of times an individual customer can use the coupon.
 - Referral-Based Coupons
 
-Above coupons create need more database tables and more time.
+The above coupons create need more database tables and more time.
 
 ### Implementation
-I implement Three types with hard code condition.
+I implement Three types with hard code conditions.
 1. Product based Coupon
 2. Cart-wise Coupon
 3. BxGy-wise Coupon
@@ -23,3 +23,4 @@ I implement Three types with hard code condition.
 - ```Post: /applicable-coupons``` Applicable coupons list
 - ```Post: apply-coupon/{id}``` Apply specific coupon.
 
+Note: I have not created a separate table for type. if we need more coupon types dynamically we can make a CouponType table to handle it. 
