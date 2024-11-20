@@ -13,9 +13,9 @@ The above coupons create need more database tables and more time.
 
 ### Implementation
 I implement Three types with hard code conditions.
-1. Product based Coupon
-2. Cart-wise Coupon
-3. BxGy-wise Coupon
+1. Product based Coupon(productBasedCoupon)
+2. Cart-wise Coupon(cart-wise)
+3. BxGy-wise Coupon(BxGyBasedCoupon)
 
 - ```Post: /coupons``` create coupon.
 - ```Get: /coupons``` Get All coupons.
@@ -23,4 +23,4 @@ I implement Three types with hard code conditions.
 - ```Post: /applicable-coupons``` Applicable coupons list
 - ```Post: apply-coupon/{id}``` Apply specific coupon.
 
-Note: I have not created a separate table for type. if we need more coupon types dynamically we can make a CouponType table to handle it. 
+Note: I have not created a separate table for coupon type just hard coded condtion. if we need more coupon types dynamically we can make a CouponType table to handle it.
