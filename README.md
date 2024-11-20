@@ -2,14 +2,14 @@
 
 ## Type of Coupons we can integrate it.
 
-- Session based coupons
+- Session-based coupons
 - Periodic Validity Coupons
 - Brand-Specific Discounts
-- Coupon Stacking: Ability to apply multiple coupons on the same order if allowed.
+- Coupon Stacking: Ability to apply multiple coupons in the same order if allowed.
 - Limit Per Customer: Restrict the number of times an individual customer can use the coupon.
 - Referral-Based Coupons
 
-The above coupons create need more database tables and more time.
+The above coupons need more database tables and more time.
 
 ### Implementation
 I implement Three types with hard code conditions.
@@ -23,4 +23,4 @@ I implement Three types with hard code conditions.
 - ```Post: /applicable-coupons``` Applicable coupons list
 - ```Post: apply-coupon/{id}``` Apply specific coupon.
 
-Note: I have not created a separate table for coupon type just hard coded condtion. if we need more coupon types dynamically we can make a CouponType table to handle it.
+Note: I have not created a separate table for coupon type just hard-coded condition. if we need more coupon types dynamically we can make a CouponType table to handle it.
